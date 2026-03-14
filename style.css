@@ -41,6 +41,7 @@ section {
     right: 0;
     z-index: 99;
     border-bottom: var(--border);
+    background-color: #000000;
 }
 
 /*nesse ele procura o section no header e organiza eles*/
@@ -104,6 +105,10 @@ por cima da navabar */
 
 }
 
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
 /* estilizando a home msm */
 
 .home-container {
@@ -133,6 +138,43 @@ por cima da navabar */
     font-size: 2rem;
     font-weight: 100;
     line-height: 1.8;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
+/* estilizando o about */
+
+.titulo {
+    font-size: 4rem;
+    color:#754545;    
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.titulo span {
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.About .row {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    gap: 1.5rem;
+}
+
+.About .row .conteudo {
+    padding: 2rem;
+}
+
+.About .row .conteudo h3 {
+    font-size: 1.6rem;
+    color: white;
+}
+
+.About .row .conteudo p {
+    font-size: 1.6rem;
+    color: white;
+
+}
