@@ -182,42 +182,114 @@ por cima da navabar */
 
 /* estilizando as caixas do menu */
 
-.Menu .box {
-    display: grid;
+.box-conteudo {
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    text-align: center;
-    border: var(--border);
-    padding: 5rem;
     cursor: pointer;
 }
 
-.Menu .box img {
+.Menu .box-conteudo .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+}
+
+.Menu .box-conteudo .box img {
     height: 10rem;
 }
 
-.Menu .box h3 {
+.Menu .box-conteudo .box h3 {
     color: white;
     font-size: 2rem;
     padding: 1rem;
 }
 
-.Menu .box .preco {
+.Menu .box-conteudo .box .preco {
     color: white;
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
 
-.Menu .box .preco span {
+.Menu .box-conteudo .box .preco span {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
 }
 
-.Menu .box:hover {
+.Menu .box-conteudo .box:hover {
     background-color: white;
 }
 
-.Menu .box:hover>* {
+.Menu .box-conteudo .box:hover>* {
     color: #000000;
 }
+
+/* estilizando a caixa de reviews */
+
+
+.review .box-conteudo {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    cursor: pointer;
+}
+
+.review .box-conteudo .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-conteudo .box p {
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-conteudo .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box-conteudo .box h3 {
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* estilizando o endereço */
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* estilizando as redes */
+
+.social {
+    text-align: center;
+}
+
+.social .redes {
+    padding: 1rem 0;
+}
+
+.social .redes img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.social .redes img:hover {
+    background-color: #754545;
+}
+
+
+
+
