@@ -176,5 +176,48 @@ por cima da navabar */
 .About .row .conteudo p {
     font-size: 1.6rem;
     color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
 
+/* estilizando as caixas do menu */
+
+.Menu .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.Menu .box img {
+    height: 10rem;
+}
+
+.Menu .box h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.Menu .box .preco {
+    color: white;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.Menu .box .preco span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.Menu .box:hover {
+    background-color: white;
+}
+
+.Menu .box:hover>* {
+    color: #000000;
 }
