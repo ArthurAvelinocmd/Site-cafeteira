@@ -1,5 +1,5 @@
 :root {
-    --main-color: #aa6565;
+    --main-color: #000000;
     --black: #13131a;
     --bg: #010103;
     --border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -66,13 +66,13 @@ section {
 /* aqui é feito o que acontece quando passa o mouse
 por cima da navabar */
 
-.navbar a:hover{
+.navbar a:hover {
 
-    color: rgb(187, 187, 187);
+    color: #754545;
     border-bottom: #010103;
     padding-bottom: 0.5rem;
     font-size: 1.9rem;
-      font-family: "Roboto Flex", sans-serif;
+    font-family: "Roboto Flex", sans-serif;
 
 }
 
@@ -87,6 +87,52 @@ por cima da navabar */
 
 .icons img:hover {
     width: 40px;
-    height:40px;
+    height: 40px;
     transition: 0.2s linear;
 }
+
+/* estilizando o botao do cafe */
+
+.btn {
+    background-color: #613939;
+    color: white;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    display: inline-block;
+
+}
+
+/* estilizando a home msm */
+
+.home-container {
+    background:url("https://i.ibb.co/t41TrTy/home-img.jpg") ;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteudo {
+    max-width: 60rem;
+}
+
+.conteudo h3 {
+    color: white;
+    font-size: 6rem;
+}
+
+.conteudo p {
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+
